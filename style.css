@@ -185,21 +185,289 @@ section{
   height: fit-content;
 }
 
-.collection-card{
-  width: 250px;
-  border-radius: 4px;
-}
-.collection-card img{
-  width: 100% ;
-  border-radius: 4px;
+/*  */
+.product {
+  padding: 40px;
+  background-color: #f9f9f9;
 }
 
+/* Phần header trên cùng */
+.collections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
 
-.view-btn{
+.collections-header .text-group h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.collections-header .text-group p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Nút view all */
+.view-all-btn {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-all-btn:hover {
+  background-color: #eee;
+}
+
+/* Grid 4 thẻ */
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* Thẻ collection */
+.collection-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-4px);
+}
+
+.collection-image {
   width: 100%;
-  border-radius: 4px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.collection-image{
-  border-radius: 4px;
+/* Tác giả */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 4px;
 }
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Tiêu đề */
+.collection-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 6px 0 4px;
+}
+
+.collection-desc {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Nút View collection */
+.view-btn {
+  padding: 8px 12px;
+  border: 1px solid #000;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #eee;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ads {
+  width: 220px;
+}
+
+.ads h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0 12px;
+  color: #000;
+}
+
+.ads p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.ads .purple,
+.ads .green,
+.ads .blue,
+.ads .red {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.purple {
+  background-color: #d6c1eb;
+  color: #6b3fa0;
+}
+
+.green {
+  background-color: #2f6e3d;
+}
+
+.blue {
+  background-color: #2c2b77;
+}
+
+.red {
+  background-color: #b44630;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* footer trái  */
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left ul li {
+  margin-bottom: 10px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-left ul li:hover {
+  color: #000;
+}
+
+.footer-left p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* footer phải */
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  text-align: right;
+}
+
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer-right .email {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* icons */
+.footer-right .icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.footer-right .icon a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.footer-right .icon a:hover {
+  background-color: #f0f0f0;
+}
+
